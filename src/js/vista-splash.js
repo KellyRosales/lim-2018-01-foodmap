@@ -1,5 +1,5 @@
 $(document).ready(function() {
     setTimeout(function() {
-      window.location.assign('./html/principal.html');
+      window.location.assign('principal.html');
     }, 2000);
   });
