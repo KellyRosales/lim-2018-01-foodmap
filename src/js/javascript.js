@@ -12,7 +12,7 @@ $(document).ready(function () {
     data[e].map(elemt => {
       $food.append(`
       <div class="w3-quarter">
-        <img src="${elemt.image}" style="width:100%">
+        <img src="${elemt.image}" style="width:100%; max-width:500px; height:200px; margin-top:50px">
         <a href="#openModal" class='modal-restaurant' data-rating="${elemt.rating}" data-type="${elemt.type}" data-image="${elemt.image}" data-address="${elemt.address}" data-name="${elemt.name}" data-description="${elemt.description}">${elemt.name}</a>
       </div>`);
     })
@@ -25,7 +25,7 @@ $(document).ready(function () {
     data[district].map(elemt => {
       $food.append(`
       <div class="w3-quarter">
-        <img src="${elemt.image}" style="width:100%">
+        <img src="${elemt.image}" style="width:100% max-width:400px; height:200px; margin-top:50px;">
         <a href="#openModal" class='modal-restaurant' data-rating="${elemt.rating}" data-type="${elemt.type}" data-image="${elemt.image}" data-address="${elemt.address}" data-name="${elemt.name}" data-description="${elemt.description}">${elemt.name}</a>
       </div>`);
     })

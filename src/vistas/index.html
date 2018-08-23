@@ -7,30 +7,33 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FOODMAP</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma"> -->
   <link rel="stylesheet" href="../css/vista-principal.css">
 </head>
 
 <body>
+    <!-- Top menu -->
+    <div class="w3-top">
+        <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+          <div class="w3-center w3-padding-16" class="title">
+            <h1>My Food</h1>
+          </div>
+        </div>
+      </div>    
 
   <!-- About Section -->
   <div class="w3-container w3-padding-32 w3-center">
-    <br>
-    <br>
-    <img src="../img/mapa.png" alt="Me" class="w3-image" style="display:block;margin:auto" width="600" height="533">
-    <div class="w3-padding-32">
-      <h4>
-        <b>Restaurants</b>
-      </h4>
+    <div class="w3-padding-30">
       <h3>
-        <b>Comida cerca de ti</b>
+        <b>Restaurantes</b>
       </h3>
-      <input type="text" value="" id="input-text">
-      <input type="button" value="Buscar" id="input-button">
+      <input type="text" name="nombre" id="input-text" value="Ingresar un lugar cercano a ti" onFocus="if (this.value=='Ingresar un lugar cercano a ti') this.value='';" style="width:20%; color:rgb(129, 129, 129)">
+      <button type="button" value="Buscar" id="input-button" class="button"> Buscar </button>
+      <br>
+      <br>
       <table name="datos" class="order-table table">
         <thead>
           <tr>
-            <th>Tipos de comida</th>
+            <th>Lugares cercanos a ti</th>
           </tr>
         </thead>
         <tbody id="datos">
@@ -48,24 +51,15 @@
     </div>
   </div>
 
-  <hr>
-
-  <!-- Top menu -->
-  <div class="w3-top">
-    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-      <div class="w3-center w3-padding-16">My Food</div>
-    </div>
-  </div>
-
   <!-- !PAGE CONTENT! -->
-  <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+  <div class="w3-main w3-content w3-padding" style="max-width:1200px">
     <!-- First Photo Grid-->
     <div class="w3-row-padding w3-padding-16 w3-center" id="food"></div>
     <!-- Modal -->
     <div id="openModal" class="modalDialog">
-      <div>
+      <div class="w3-quarter">
         <a href="#close" title="Close" class="close">X</a>
-        <img id='image' src="" style="width:100%">
+        <img id="image" src="" style="width:100%">
         <h1 id="name"></h1>
         <p id="type"></p>
         <p id="address"></p>
