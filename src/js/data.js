@@ -11,8 +11,8 @@ var data = {
     },
     {
       "type": "Comida peruana",
-      "name": "La Trastienda",
-      "image": "../img/la-trastienda",
+      "name": "La trastienda",
+      "image": "../img/la-trastienda.png",
       "address": "Av. Costa Verde s/n Playa Las Cascadas (Bordemar)",
       "description": "Sus platos son la excusa perfecta para que podamos disfrutar de su mágica vista al mar, una ubicación privilegiada que distingue aún más al restaurante.",
       "rating": "Excellent: 54.3%"
