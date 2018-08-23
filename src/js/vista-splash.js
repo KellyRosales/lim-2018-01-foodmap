@@ -1,5 +1,5 @@
 $(document).ready(function() {
     setTimeout(function() {
-      window.location.assign('principal.html');
+      window.location.assign('vistas/index.html');
     }, 2000);
   });
