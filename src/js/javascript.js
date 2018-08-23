@@ -3,7 +3,7 @@
 $(document).ready(function () {
   const $inputText = $('#input-text');
   const $inputButton = $('#input-button');
-  const $openModal = $('#openModal');
+
   const $food =$('#food')
 
   district = ['Miraflores', 'Barranco', 'Chorrillos']
